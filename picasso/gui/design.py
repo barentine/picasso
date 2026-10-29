@@ -1777,13 +1777,6 @@ class MainWindow(QtWidgets.QWidget):
         vbox.addLayout(hbox)
         self.setLayout(vbox)
 
-        # make white background
-        palette = QtGui.QPalette()
-        palette.setColor(
-            QtGui.QPalette.ColorRole.Window, QtCore.Qt.GlobalColor.white
-        )
-        self.setPalette(palette)
-
         menu_bar = QtWidgets.QMenuBar(self)
         file_menu = menu_bar.addMenu("File")
         picasso_settings_action = file_menu.addAction("Picasso settings...")
